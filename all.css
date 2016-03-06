@@ -1,0 +1,1761 @@
+@font-face {
+  font-family: 'FontAwesome';
+  font-weight: normal;
+  font-style: normal;
+  src: url(fonts/fontawesome-webfont.woff) format('woff');
+}
+@font-face {
+  font-family: "FontMfizz";
+  src: url(fonts/font-mfizz.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url(fonts/icomoon.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "devicons";
+  src: url(fonts/devicons.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Octicons Regular";
+  src: url(fonts/octicons.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "file-icons";
+  src: url(fonts/file-icons.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'extra-icons';
+  src: url(fonts/extra-icons.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.monaco-tree-row .content .sub-content .explorer-item.folder-icon {
+  padding-left: 22px;
+}
+.monaco-tree-row .content .sub-content .explorer-item.folder-icon:before {
+  font-family: "extra-icons";
+  font-size: medium;
+  content: "\ef00";
+  text-align: center;
+  position: absolute;
+  left: 0;
+}
+.monaco-tree-row.expanded .content .sub-content .explorer-item.folder-icon:before {
+  font-family: "extra-icons";
+  font-size: medium;
+  content: "\ef01";
+}
+.explorer-item.text-file-icon {
+  padding-left: 20px;
+}
+.explorer-item.text-file-icon:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f011";
+  text-align: center;
+  position: absolute;
+  left: 0;
+}
+.explorer-item.text-file-icon.text-file-pdf:before {
+  font-family: "extra-icons";
+  font-size: medium;
+  content: "\ef02";
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-doc:before,
+.explorer-item.text-file-icon.text-file-docx:before {
+  font-family: "extra-icons";
+  font-size: medium;
+  content: "\ef04";
+  color: #4775BC;
+}
+.explorer-item.text-file-icon.text-file-ppt:before,
+.explorer-item.text-file-icon.text-file-pptx:before {
+  font-family: "extra-icons";
+  font-size: medium;
+  content: "\ef03";
+  color: #ec6140;
+}
+.explorer-item.text-file-icon.text-file-xsl:before,
+.explorer-item.text-file-icon.text-file-xslx:before {
+  font-family: "extra-icons";
+  font-size: medium;
+  content: "\ef05";
+  color: #247D4C;
+}
+.explorer-item.text-file-icon.text-file-png:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f012";
+  color: #D28445;
+}
+.explorer-item.text-file-icon.text-file-gif:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f012";
+  color: #F4BF75;
+}
+.explorer-item.text-file-icon.text-file-jpg:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f012";
+  color: #90A959;
+}
+.explorer-item.text-file-icon.text-file-todo:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f076";
+  color: #F4BF75;
+}
+.explorer-item.text-file-icon.text-file-makefile:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f076";
+  color: #F4BF75;
+}
+.explorer-item.text-file-icon.text-file-mk:before,
+.explorer-item.text-file-icon.text-file-mak:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f076";
+  color: #F4BF75;
+}
+.explorer-item.text-file-icon.text-file-ini:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f07c";
+  color: #F4BF75;
+}
+.explorer-item.text-file-icon.text-file-properties:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f07c";
+  color: #AA759F;
+}
+.explorer-item.text-file-icon.text-file-toml:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f07c";
+  color: #90A959;
+}
+.explorer-item.text-file-icon.text-file-clj:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: "\e668";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-cljcljs:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\f104";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-xml:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f05f";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-config:before,
+.explorer-item.text-file-icon.text-file-manifest:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f05f";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-jl:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f05f";
+  color: #AA759F;
+}
+.explorer-item.text-file-icon.text-file-cfc:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f05f";
+  color: #a7d0c9;
+}
+.explorer-item.text-file-icon.text-file-cfm:before,
+.explorer-item.text-file-icon.text-file-cfml:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f05f";
+  color: #75B5AA;
+}
+.explorer-item.text-file-icon.text-file-less:before {
+  font-family: "FontAwesome";
+  font-size: small;
+  content: "\f13c";
+  color: #46788d;
+}
+.explorer-item.text-file-icon.text-file-css:before {
+  font-family: "FontAwesome";
+  font-size: small;
+  content: "\f13c";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-styl:before {
+  font-family: "FontAwesome";
+  font-size: small;
+  content: "\f13c";
+  color: #90A959;
+}
+.explorer-item.text-file-icon.text-file-slim:before,
+.explorer-item.text-file-icon.text-file-skim:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f07d";
+  color: #D28445;
+}
+.explorer-item.text-file-icon.text-file-json:before,
+.explorer-item.text-file-icon.text-file-json5:before,
+.explorer-item.text-file-icon.text-file-hjson:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f096";
+  color: #F4BF75;
+}
+.explorer-item.text-file-icon.text-file-ndjson:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f096";
+  color: #D28445;
+}
+.explorer-item.text-file-icon.text-file-cson:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f096";
+  color: #8F5536;
+}
+.explorer-item.text-file-icon.text-file-yml:before,
+.explorer-item.text-file-icon.text-file-yaml:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f096";
+  color: #c97071;
+}
+.explorer-item.text-file-icon.text-file-ex:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: '\f113';
+  color: #825078;
+}
+.explorer-item.text-file-icon.text-file-exs:before,
+.explorer-item.text-file-icon.text-file-eex:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: '\f113';
+  color: #AA759F;
+}
+.explorer-item.text-file-icon.text-file-html-eex:before {
+  font-family: "FontAwesome";
+  font-size: small;
+  content: "\f13b";
+  color: #AA759F;
+}
+.explorer-item.text-file-icon.text-file-json-eex:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f096";
+  color: #AA759F;
+}
+.explorer-item.text-file-icon.text-file-mix-exs:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: '\f113';
+  color: #c7a4c0;
+}
+.explorer-item.text-file-icon.text-file-mix-ex:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: '\f113';
+  color: #c7a4c0;
+}
+.explorer-item.text-file-icon.text-file-erl:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: '\e6b1';
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-beam:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: '\e6b1';
+  color: #742c2d;
+}
+.explorer-item.text-file-icon.text-file-eot:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e90f";
+  font-size: 14px;
+  left: 1px;
+  top: -1px;
+  color: #b2c38b;
+}
+.explorer-item.text-file-icon.text-file-ttf:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e90f";
+  font-size: 14px;
+  left: 1px;
+  top: -1px;
+  color: #90A959;
+}
+.explorer-item.text-file-icon.text-file-otf:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e90f";
+  font-size: 14px;
+  left: 1px;
+  top: -1px;
+  color: #ee9e2e;
+}
+.explorer-item.text-file-icon.text-file-woff:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e90f";
+  font-size: 14px;
+  left: 1px;
+  top: -1px;
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-woff2:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e90f";
+  font-size: 14px;
+  left: 1px;
+  top: -1px;
+  color: #46788d;
+}
+.explorer-item.text-file-icon.text-file-fs:before,
+.explorer-item.text-file-icon.text-file-fsx:before,
+.explorer-item.text-file-icon.text-file-fsi:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: "\e6a7";
+  left: 1px;
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-gitconfig:before,
+.explorer-item.text-file-icon.text-file-gitignore:before,
+.explorer-item.text-file-icon.text-file-gitignore_global:before,
+.explorer-item.text-file-icon.text-file-gitkeep:before,
+.explorer-item.text-file-icon.text-file-gitattributes:before,
+.explorer-item.text-file-icon.text-file-gitmodules:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: "\e602";
+  top: 4px;
+  -webkit-background-clip: text;
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: 0.85px;
+  -webkit-transform: scale(1.15, 1.1);
+}
+.explorer-item.text-file-icon.text-file-html:before,
+.explorer-item.text-file-icon.text-file-htm:before {
+  font-family: "FontAwesome";
+  font-size: small;
+  content: "\f13b";
+  color: #D28445;
+}
+.explorer-item.text-file-icon.text-file-shtml:before {
+  font-family: "FontAwesome";
+  font-size: small;
+  content: "\f13b";
+  color: #75B5AA;
+}
+.explorer-item.text-file-icon.text-file-haml:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\f15b";
+  font-size: 15px;
+  left: 1px;
+  color: #F4BF75;
+}
+.explorer-item.text-file-icon.text-file-jsp:before {
+  font-family: "FontAwesome";
+  font-size: small;
+  content: "\f13b";
+  color: #AA759F;
+}
+.explorer-item.text-file-icon.text-file-ctp:before {
+  font-family: "FontAwesome";
+  font-size: small;
+  content: "\f13b";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-ejs:before,
+.explorer-item.text-file-icon.text-file-swig:before {
+  font-family: "FontAwesome";
+  font-size: small;
+  content: "\f13b";
+  color: #90A959;
+}
+.explorer-item.text-file-icon.text-file-cshtml:before {
+  font-family: "FontAwesome";
+  font-size: small;
+  content: "\f13b";
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-hbs:before,
+.explorer-item.text-file-icon.text-file-handlebars:before,
+.explorer-item.text-file-icon.text-file-mustache:before {
+  font-family: "icomoon";
+  font-size: 18px;
+  top: 3px;
+  content: "\e60f";
+  color: #D28445;
+}
+.explorer-item.text-file-icon.text-file-emblem:before,
+.explorer-item.text-file-icon.text-file-em:before {
+  font-family: "icomoon";
+  font-size: 18px;
+  top: 3px;
+  content: "\e60f";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-tpl:before {
+  font-family: "FontAwesome";
+  font-size: small;
+  content: "\f0eb";
+  color: #F4BF75;
+}
+.explorer-item.text-file-icon.text-file-twig:before {
+  font-family: "FontAwesome";
+  font-size: small;
+  content: "\f1bb";
+  color: #90A959;
+}
+.explorer-item.text-file-icon.text-file-hgignore:before,
+.explorer-item.text-file-icon.text-file-mailmap:before,
+.explorer-item.text-file-icon.text-file-jshintignore:before,
+.explorer-item.text-file-icon.text-file-babelignore:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f02f";
+}
+.explorer-item.text-file-icon.text-file-editorconfig:before,
+.explorer-item.text-file-icon.text-file-htpasswd:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f02f";
+  color: #D28445;
+}
+.explorer-item.text-file-icon.text-file-lesshintrc:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f02f";
+  color: #ee9e2e;
+}
+.explorer-item.text-file-icon.text-file-csscomb-json:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f02f";
+  color: #F4BF75;
+}
+.explorer-item.text-file-icon.text-file-csslintrc:before,
+.explorer-item.text-file-icon.text-file-jshintrc:before,
+.explorer-item.text-file-icon.text-file-babelrc:before,
+.explorer-item.text-file-icon.text-file-jscsrc:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f02f";
+  color: #F4BF75;
+}
+.explorer-item.text-file-icon.text-file-module:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f02f";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-htaccess:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f02f";
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-nodemon-json:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f02f";
+  color: #90A959;
+}
+.explorer-item.text-file-icon.text-file-nodemonignore:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f02f";
+  color: #90A959;
+}
+.explorer-item.text-file-icon.text-file-npmrc:before,
+.explorer-item.text-file-icon.text-file-npmignore:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\f17b";
+  font-size: 18px;
+  top: 5px;
+}
+.explorer-item.text-file-icon.text-file-npm-debug-log:before,
+.explorer-item.text-file-icon.text-file-package-json:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\f17b";
+  font-size: 18px;
+  top: 5px;
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-bowerrc:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: "\e64d";
+}
+.explorer-item.text-file-icon.text-file-bower-json:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: "\e64d";
+  color: #F4BF75;
+}
+.explorer-item.text-file-icon.text-file-sass:before,
+.explorer-item.text-file-icon.text-file-scss:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: "\e64b";
+  top: 0;
+  color: #ff4ddb;
+}
+.explorer-item.text-file-icon.text-file-php:before,
+.explorer-item.text-file-icon.text-file-hh:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "\f147";
+  font-size: medium;
+  color: #46788d;
+}
+.explorer-item.text-file-icon.text-file-blade-php:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: "\e63f";
+  color: #825078;
+}
+.explorer-item.text-file-icon.text-file-py:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "\f14c";
+  color: #ee9e2e;
+}
+.explorer-item.text-file-icon.text-file-ipy:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "\f14c";
+  color: #46788d;
+}
+.explorer-item.text-file-icon.text-file-rpy:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "\f14c";
+  color: #ff00cc;
+}
+.explorer-item.text-file-icon.text-file-rpyb:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f094";
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-rpyc:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f094";
+}
+.explorer-item.text-file-icon.text-file-capfile:before,
+.explorer-item.text-file-icon.text-file-gemfile:before,
+.explorer-item.text-file-icon.text-file-gemfile.lock:before,
+.explorer-item.text-file-icon.text-file-guardfile:before,
+.explorer-item.text-file-icon.text-file-rakefile:before,
+.explorer-item.text-file-icon.text-file-gemspec:before,
+.explorer-item.text-file-icon.text-file-ruby-gemset:before,
+.explorer-item.text-file-icon.text-file-ruby-version:before,
+.explorer-item.text-file-icon.text-file-rspec:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f047";
+}
+.explorer-item.text-file-icon.text-file-rb:before,
+.explorer-item.text-file-icon.text-file-ru:before,
+.explorer-item.text-file-icon.text-file-rake:before,
+.explorer-item.text-file-icon.text-file-erb:before,
+.explorer-item.text-file-icon.text-file-opal:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f047";
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-_spec-rb:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f047";
+  color: #b2c38b;
+}
+.explorer-item.text-file-icon.text-file-rails:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: "\e63b";
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-pp:before {
+  font-family: "FontAwesome";
+  font-size: small;
+  content: "\f0c3";
+  color: #AA759F;
+}
+.explorer-item.text-file-icon.text-file-feature:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f02b";
+  color: #90A959;
+}
+.explorer-item.text-file-icon.text-file-js:before,
+.explorer-item.text-file-icon.text-file-es6:before,
+.explorer-item.text-file-icon.text-file-es:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "\f128";
+  font-size: medium;
+  color: #F4BF75;
+}
+.explorer-item.text-file-icon.text-file-jsx:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\f101";
+  left: -3px;
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-tsx:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\f101";
+  left: -3px;
+  color: #9dc0ce;
+}
+.explorer-item.text-file-icon.text-file-react-js:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\f100";
+  top: 3px;
+  left: -2px;
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-ts:before {
+  font-family: "file-icons";
+  font-size: large;
+  content: "\e912";
+  font-size: 14px;
+  left: -1px;
+  top: 2px;
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-ls:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e914";
+  font-size: 14px;
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-raml:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e913";
+  font-size: 14px;
+  color: #75B5AA;
+}
+.explorer-item.text-file-icon.text-file-elm:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\f102";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-org:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e917";
+  font-size: 14px;
+  left: 1px;
+  color: #66783e;
+}
+.explorer-item.text-file-icon.text-file-build-boot:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\f103";
+  left: 2px;
+}
+.explorer-item.text-file-icon.text-file-project.clj:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\f105";
+  left: 3px;
+}
+.explorer-item.text-file-icon.text-file-coffee:before {
+  font-family: "FontAwesome";
+  font-size: small;
+  content: "\f0f4";
+  color: #8F5536;
+}
+.explorer-item.text-file-icon.text-file-cjsx:before {
+  font-family: "FontAwesome";
+  font-size: small;
+  content: "\f0f4";
+  color: #573421;
+}
+.explorer-item.text-file-icon.text-file-litcoffee:before {
+  font-family: "FontAwesome";
+  font-size: small;
+  content: "\f0f4";
+  color: #be7953;
+}
+.explorer-item.text-file-icon.text-file-iced:before {
+  font-family: "FontAwesome";
+  font-size: small;
+  content: "\f0f4";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-js-erb:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "\f128";
+  font-size: medium;
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-coffee-erb:before {
+  font-family: "FontAwesome";
+  font-size: small;
+  content: "\f0f4";
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-html-erb:before {
+  font-family: "FontAwesome";
+  font-size: small;
+  content: "\f13b";
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-pl:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "\f142";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-pm:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "\f142";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-t:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "\f142";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-java:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "\f126";
+  font-size: medium;
+  left: 2px;
+  top: 2px;
+  color: #AA759F;
+}
+.explorer-item.text-file-icon.text-file-go:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: "\e624";
+  font-weight: bolder;
+  top: 4px;
+  -webkit-background-clip: text;
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: 0.85px;
+  -webkit-transform: scale(1.15, 1.1);
+  font-size: medium;
+  color: #AA759F;
+}
+.explorer-item.text-file-icon.text-file-gohtml:before {
+  font-family: "FontAwesome";
+  font-size: small;
+  content: "\f13b";
+  color: #46788d;
+}
+.explorer-item.text-file-icon.text-file-scala:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "\f154";
+  font-size: medium;
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-hs:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "\f121";
+  color: #AA759F;
+}
+.explorer-item.text-file-icon.text-file-rs:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: "\e6a8";
+  font-size: 22px;
+  line-height: .7;
+  top: 5px;
+  margin-right: 5px;
+  left: -1px;
+  color: #8F5536;
+}
+.explorer-item.text-file-icon.text-file-rlib:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: "\e6a8";
+  font-size: 22px;
+  line-height: .7;
+  top: 5px;
+  margin-right: 5px;
+  left: -1px;
+  color: #be7953;
+}
+.explorer-item.text-file-icon.text-file-c:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "\f106";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-h:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "\f106";
+  color: #AA759F;
+}
+.explorer-item.text-file-icon.text-file-cpp:before,
+.explorer-item.text-file-icon.text-file-cxx:before,
+.explorer-item.text-file-icon.text-file-cc:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "\f10b";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-hpp:before,
+.explorer-item.text-file-icon.text-file-hxx:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "\f10b";
+  color: #AA759F;
+}
+.explorer-item.text-file-icon.text-file-ipp:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "\f10b";
+  color: #D28445;
+}
+.explorer-item.text-file-icon.text-file-m:before,
+.explorer-item.text-file-icon.text-file-mm:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "\f13e";
+  font-size: medium;
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-swift:before {
+  font-family: "devicons";
+  top: 3px;
+  content: "\e655";
+  font-size: large;
+  color: #90A959;
+}
+.explorer-item.text-file-icon.text-file-ml:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e91a";
+  font-size: 14px;
+  color: #D28445;
+}
+.explorer-item.text-file-icon.text-file-mli:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e91a";
+  font-size: 14px;
+  color: #a35f27;
+}
+.explorer-item.text-file-icon.text-file-eliom:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e91a";
+  font-size: 14px;
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-eliomi:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e91a";
+  font-size: 14px;
+  color: #742c2d;
+}
+.explorer-item.text-file-icon.text-file-ml4:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e91a";
+  font-size: 14px;
+  color: #90A959;
+}
+.explorer-item.text-file-icon.text-file-mll:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e91a";
+  font-size: 14px;
+  color: #66783e;
+}
+.explorer-item.text-file-icon.text-file-mly:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e91a";
+  font-size: 14px;
+  color: #ee9e2e;
+}
+.explorer-item.text-file-icon.text-file-d:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: "\e6af";
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-di:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: "\e6af";
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-cs:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "\f10c";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-vb:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f05f";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-dart:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: "\e698";
+  color: #75B5AA;
+}
+.explorer-item.text-file-icon.text-file-sp:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: "\e668";
+  color: #F4BF75;
+}
+.explorer-item.text-file-icon.text-file-inc:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: "\e668";
+  color: #90A959;
+}
+.explorer-item.text-file-icon.text-file-secret:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f08c";
+}
+.explorer-item.text-file-icon.text-file-mdown:before,
+.explorer-item.text-file-icon.text-file-markdown:before,
+.explorer-item.text-file-icon.text-file-mkd:before,
+.explorer-item.text-file-icon.text-file-mkdown:before,
+.explorer-item.text-file-icon.text-file-rmd:before,
+.explorer-item.text-file-icon.text-file-ron:before,
+.explorer-item.text-file-icon.text-file-md:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f0c9";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-tt:before,
+.explorer-item.text-file-icon.text-file-tt2:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "TT";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-tt3:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "TT";
+  color: #AA759F;
+}
+.explorer-item.text-file-icon.text-file-sql:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "\f10e";
+}
+.explorer-item.text-file-icon.text-file-txt:before {
+  color: #75B5AA;
+}
+.explorer-item.text-file-icon.text-file-o:before,
+.explorer-item.text-file-icon.text-file-out:before,
+.explorer-item.text-file-icon.text-file-s:before,
+.explorer-item.text-file-icon.text-file-asm:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f094";
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-ko:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f094";
+  color: #66783e;
+}
+.explorer-item.text-file-icon.text-file-sh:before,
+.explorer-item.text-file-icon.text-file-bash:before,
+.explorer-item.text-file-icon.text-file-bashrc:before,
+.explorer-item.text-file-icon.text-file-bash_login:before,
+.explorer-item.text-file-icon.text-file-bash_profile:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f0c8";
+  color: #AA759F;
+}
+.explorer-item.text-file-icon.text-file-zsh:before,
+.explorer-item.text-file-icon.text-file-zshrc:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f0c8";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-fish:before,
+.explorer-item.text-file-icon.text-file-fishrc:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f0c8";
+  color: #90A959;
+}
+.explorer-item.text-file-icon.text-file-vim:before,
+.explorer-item.text-file-icon.text-file-nvimrc:before,
+.explorer-item.text-file-icon.text-file-vimrc:before,
+.explorer-item.text-file-icon.text-file-_vimrc:before,
+.explorer-item.text-file-icon.text-file-gvimrc:before,
+.explorer-item.text-file-icon.text-file-nvimrc:before,
+.explorer-item.text-file-icon.text-file-vimrc:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: "\e6c5";
+  color: #90A959;
+}
+.explorer-item.text-file-icon.text-file-composer-json:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e683";
+  font-size: 17px;
+  color: #F4BF75;
+}
+.explorer-item.text-file-icon.text-file-gruntfile-js:before {
+  font-family: "icomoon";
+  font-size: 18px;
+  top: 3px;
+  content: "\e611";
+  color: #F4BF75;
+}
+.explorer-item.text-file-icon.text-file-gruntfile-coffee:before {
+  font-family: "icomoon";
+  font-size: 18px;
+  top: 3px;
+  content: "\e611";
+  color: #8F5536;
+}
+.explorer-item.text-file-icon.text-file-gulpfile-js:before {
+  font-family: "icomoon";
+  font-size: 18px;
+  top: 3px;
+  content: "\e610";
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-gulpfile-coffee:before {
+  font-family: "icomoon";
+  font-size: 18px;
+  top: 3px;
+  content: "\e610";
+  color: #8F5536;
+}
+.explorer-item.text-file-icon.text-file-gulpfile-babel-js:before {
+  font-family: "icomoon";
+  font-size: 18px;
+  top: 3px;
+  content: "\e610";
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-tag:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e919";
+  font-size: 7px;
+  top: 0;
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-cargo-toml:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f0c4";
+  color: #e1ad83;
+}
+.explorer-item.text-file-icon.text-file-cargo-lock:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f0c4";
+  color: #a35f27;
+}
+.explorer-item.text-file-icon.text-file-ionic.project:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\f14b";
+  font-size: 18px;
+  left: 1px;
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-conf:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\f146b";
+  font-size: 15px;
+  left: 1px;
+  color: #66783e;
+}
+.explorer-item.text-file-icon.text-file-apache-conf:before,
+.explorer-item.text-file-icon.text-file-apache2-conf:before,
+.explorer-item.text-file-icon.text-file-httpd-conf:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: '\f102';
+  top: 3px;
+  left: 0;
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-deb:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: '\f111';
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-rpm:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: '\f14e';
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-dmg:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: '\f141';
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-travis:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: "\e67e";
+  font-size: medium;
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-dockerfile:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\f106";
+  color: #46788d;
+}
+.explorer-item.text-file-icon.text-file-dockerignore:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\f106";
+  color: #46788d;
+}
+.explorer-item.text-file-icon.text-file-tf:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e916";
+  font-size: 14px;
+  color: #825078;
+}
+.explorer-item.text-file-icon.text-file-sls:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e915";
+  font-size: 14px;
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-xaml:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f05f";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-lua:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e91b";
+  font-size: 14px;
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-ps1:before,
+.explorer-item.text-file-icon.text-file-psd1:before,
+.explorer-item.text-file-icon.text-file-psm1:before,
+.explorer-item.text-file-icon.text-file-ps1xml:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f0c8";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-readme-md:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f007";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-adoc:before,
+.explorer-item.text-file-icon.text-file-asc:before,
+.explorer-item.text-file-icon.text-file-asciidoc:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e918";
+  font-size: 14px;
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-png:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f012";
+  color: #D28445;
+}
+.explorer-item.text-file-icon.text-file-gif:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f012";
+  color: #F4BF75;
+}
+.explorer-item.text-file-icon.text-file-jpg:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f012";
+  color: #90A959;
+}
+.explorer-item.text-file-icon.text-file-ico:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f012";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-svg:before {
+  font-family: "FontMfizz";
+  font-size: small;
+  content: "\f15c";
+  color: #ee9e2e;
+}
+.explorer-item.text-file-icon.text-file-avi:before,
+.explorer-item.text-file-icon.text-file-3gp:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f057";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-mp4:before,
+.explorer-item.text-file-icon.text-file-webm:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f057";
+  color: #46788d;
+}
+.explorer-item.text-file-icon.text-file-mov:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f057";
+  color: #75B5AA;
+}
+.explorer-item.text-file-icon.text-file-mkv:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f057";
+  color: #AA759F;
+}
+.explorer-item.text-file-icon.text-file-h264:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f057";
+  color: #66783e;
+}
+.explorer-item.text-file-icon.text-file-wmv:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f057";
+  color: #825078;
+}
+.explorer-item.text-file-icon.text-file-ogv:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f057";
+  color: #a35f27;
+}
+.explorer-item.text-file-icon.text-file-ogg:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f057";
+  color: #D28445;
+}
+.explorer-item.text-file-icon.text-file-m4v:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f057";
+  color: #ee9e2e;
+}
+.explorer-item.text-file-icon.text-file-mpg:before,
+.explorer-item.text-file-icon.text-file-ogm:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f057";
+  color: #742c2d;
+}
+.explorer-item.text-file-icon.text-file-mpeg:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f057";
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-3gpp:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f057";
+  color: #9dc0ce;
+}
+.explorer-item.text-file-icon.text-file-bat:before,
+.explorer-item.text-file-icon.text-file-cmd:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: "\e60f";
+  color: #AA759F;
+}
+.explorer-item.text-file-icon.text-file-exe:before,
+.explorer-item.text-file-icon.text-file-com:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: "\e60f";
+}
+.explorer-item.text-file-icon.text-file-reg:before {
+  font-family: "devicons";
+  font-size: large;
+  top: 3px;
+  content: "\e60f";
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-tex:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e600";
+  font-size: 8px;
+  top: 0;
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-sty:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e600";
+  font-size: 8px;
+  top: 0;
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-cls:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e600";
+  font-size: 8px;
+  top: 0;
+  color: #D28445;
+}
+.explorer-item.text-file-icon.text-file-bib:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e601";
+  font-size: 8px;
+  top: -2px;
+  color: #F4BF75;
+}
+.explorer-item.text-file-icon.text-file-csv:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f043";
+  color: #c97071;
+}
+.explorer-item.text-file-icon.text-file-tsv:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f043";
+  color: #b2c38b;
+}
+.explorer-item.text-file-icon.text-file-gp:before,
+.explorer-item.text-file-icon.text-file-gnuplot:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f043";
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-ms:before,
+.explorer-item.text-file-icon.text-file-mce:before,
+.explorer-item.text-file-icon.text-file-mcr:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e900";
+  font-size: 15px;
+  color: #46788d;
+}
+.explorer-item.text-file-icon.text-file-kv:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e901";
+  font-size: 17px;
+  top: 3px;
+  color: #573421;
+}
+.explorer-item.text-file-icon.text-file-cr:before,
+.explorer-item.text-file-icon.text-file-ecr:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e902";
+  font-size: 15px;
+  left: 1px;
+  color: #75B5AA;
+}
+.explorer-item.text-file-icon.text-file-gradle:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e903";
+  font-size: 14px;
+  top: 1px;
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-groovy:before,
+.explorer-item.text-file-icon.text-file-grt:before,
+.explorer-item.text-file-icon.text-file-gtpl:before,
+.explorer-item.text-file-icon.text-file-gsp:before,
+.explorer-item.text-file-icon.text-file-gvy:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e904";
+  font-size: 14px;
+  left: -1px;
+  color: #9dc0ce;
+}
+.explorer-item.text-file-icon.text-file-rd:before,
+.explorer-item.text-file-icon.text-file-rsx:before,
+.explorer-item.text-file-icon.text-file-rprofile:before,
+.explorer-item.text-file-icon.text-file-r:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e905";
+  font-size: 13px;
+  left: 0;
+  top: 1px;
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-vue:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e906";
+  font-size: 14px;
+  top: 3px;
+  color: #b2c38b;
+}
+.explorer-item.text-file-icon.text-file-hx:before,
+.explorer-item.text-file-icon.text-file-hxsl:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e907";
+  font-size: 15px;
+  top: 1px;
+  left: 1px;
+  color: #D28445;
+}
+.explorer-item.text-file-icon.text-file-hxml:before {
+  font-family: "Octicons Regular";
+  font-size: medium;
+  content: "\f076";
+  color: #D28445;
+}
+.explorer-item.text-file-icon.text-file-scad:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e911";
+  font-size: 14px;
+  color: #D28445;
+}
+.explorer-item.text-file-icon.text-file-postcss:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e910";
+  font-size: 14px;
+  color: #742c2d;
+}
+.explorer-item.text-file-icon.text-file-ada:before,
+.explorer-item.text-file-icon.text-file-adb:before,
+.explorer-item.text-file-icon.text-file-ads:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e90b";
+  font-size: 17px;
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-apl:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e909";
+  font-size: 15px;
+  color: #742c2d;
+}
+.explorer-item.text-file-icon.text-file-dyalog:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e90c";
+  font-size: 14px;
+  left: 1px;
+  color: #D28445;
+}
+.explorer-item.text-file-icon.text-file-f:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e90a";
+  font-size: 14px;
+  left: 1px;
+  top: 1px;
+  color: #8F5536;
+}
+.explorer-item.text-file-icon.text-file-f90:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e90a";
+  font-size: 14px;
+  left: 1px;
+  top: 1px;
+  color: #90A959;
+}
+.explorer-item.text-file-icon.text-file-f03:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e90a";
+  font-size: 14px;
+  left: 1px;
+  top: 1px;
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-f08:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e90a";
+  font-size: 14px;
+  left: 1px;
+  top: 1px;
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-f77:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e90a";
+  font-size: 14px;
+  left: 1px;
+  top: 1px;
+  color: #8F5536;
+}
+.explorer-item.text-file-icon.text-file-f95:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e90a";
+  font-size: 14px;
+  left: 1px;
+  top: 1px;
+  color: #b3008f;
+}
+.explorer-item.text-file-icon.text-file-for:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e90a";
+  font-size: 14px;
+  left: 1px;
+  top: 1px;
+  color: #4d9085;
+}
+.explorer-item.text-file-icon.text-file-fpp:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e90a";
+  font-size: 14px;
+  left: 1px;
+  top: 1px;
+  color: #ee9e2e;
+}
+.explorer-item.text-file-icon.text-file-lsp:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e908";
+  font-size: 12px;
+  top: 1px;
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-lisp:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e908";
+  font-size: 12px;
+  top: 1px;
+  color: #742c2d;
+}
+.explorer-item.text-file-icon.text-file-cl:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e908";
+  font-size: 12px;
+  top: 1px;
+  color: #D28445;
+}
+.explorer-item.text-file-icon.text-file-l:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e908";
+  font-size: 12px;
+  top: 1px;
+  color: #8F5536;
+}
+.explorer-item.text-file-icon.text-file-ny:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e908";
+  font-size: 12px;
+  top: 1px;
+  color: #6A9FB5;
+}
+.explorer-item.text-file-icon.text-file-jade:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e90d";
+  font-size: 12px;
+  top: 1px;
+  color: #AC4142;
+}
+.explorer-item.text-file-icon.text-file-eslintrc:before,
+.explorer-item.text-file-icon.text-file-eslintrc-js:before,
+.explorer-item.text-file-icon.text-file-eslintrc-json:before,
+.explorer-item.text-file-icon.text-file-eslintrc-yaml:before,
+.explorer-item.text-file-icon.text-file-eslintrc-yml:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e90e";
+  font-size: 14px;
+  left: 1px;
+  color: #c7a4c0;
+}
+.explorer-item.text-file-icon.text-file-eslintignore:before {
+  font-family: "file-icons";
+  font-size: large;
+  top: 2px;
+  content: "\e90e";
+  font-size: 14px;
+  left: 1px;
+  color: #AA759F;
+}

@@ -1,0 +1,623 @@
+@import "colors.less";
+@import "fonts.less";
+@import "icons.less";
+
+// folder icon
+.monaco-tree-row {
+
+  & .content .sub-content .explorer-item.folder-icon {
+    padding-left: 22px;
+
+    &:before {
+      .folder-icon;
+      text-align: center;
+      position: absolute;
+      left: 0;
+    }
+
+    // &.folder-icon-git:before { .git-icon; }
+    // &.folder-icon-bundle:before { .package-icon; }
+    // &.folder-icon-meteor:before { .meteor-icon; }
+  }
+
+  &.expanded .content .sub-content .explorer-item.folder-icon {
+    &:before {
+      .folder-open-icon;
+    }
+  }
+}
+
+.explorer-item.text-file-icon {
+
+  padding-left: 20px;
+
+  &:before {
+    .text-icon;
+    text-align: center;
+    position: absolute;
+    left: 0;
+  }
+
+  // office pdf
+  &.text-file-pdf:before { .pdf-icon; .medium-red; left: -1px; }
+
+  &.text-file-doc:before,
+  &.text-file-docx:before { .word-icon; color: #4775BC; left: -1px; }
+
+  &.text-file-ppt:before,
+  &.text-file-pptx:before { .ppt-icon; color: #ec6140; left: -1px; }
+
+  &.text-file-xsl:before,
+  &.text-file-xslx:before { .excel-icon; color: #247D4C; left: -1px; }
+
+  // Image
+  &.text-file-png:before { .image-icon; .medium-orange; }
+  &.text-file-gif:before { .image-icon; .medium-yellow; }
+  &.text-file-jpg:before { .image-icon; .medium-green; }
+
+  // Checklist icon
+  &.text-file-todo:before { .checklist-icon; .medium-yellow; }
+
+  // Makefile icon
+  &.text-file-makefile:before { .checklist-icon; .medium-yellow; }
+
+  &.text-file-mk:before,
+  &.text-file-mak:before { .checklist-icon; .medium-yellow; }
+
+  // Config files
+  &.text-file-ini:before { .config-icon; .medium-yellow; }
+  &.text-file-properties:before { .config-icon; .medium-purple; }
+  &.text-file-toml:before { .config-icon; .medium-green; }
+
+  // Clojure
+  &.text-file-clj:before { .clojure-icon; .medium-blue; }
+
+  // ClojureScript
+  &.text-file-cljcljs:before { .cljs-icon; .medium-blue; }
+
+  // Code icon
+  &.text-file-xml:before { .code-icon; .medium-blue;   }
+
+  ///app.exe.config and manifest format is xml.
+  &.text-file-config:before,
+  &.text-file-manifest:before { .code-icon; .medium-blue;   }
+
+  &.text-file-jl:before { .code-icon; .medium-purple;   }
+
+  &.text-file-cfc:before  { .code-icon; .light-cyan; }
+
+  &.text-file-cfm:before,
+  &.text-file-cfml:before { .code-icon; .medium-cyan; }
+
+  // CSS3 icon
+  &.text-file-less:before { .css3-icon; .dark-blue; }
+  &.text-file-css:before  { .css3-icon; .medium-blue; }
+  &.text-file-styl:before { .css3-icon; .medium-green; }
+
+
+  // Dashboard icon
+  &.text-file-slim:before,
+  &.text-file-skim:before { .dashboard-icon; .medium-orange; }
+
+  // Database icon
+  &.text-file-json:before,
+  &.text-file-json5:before,
+  &.text-file-hjson:before  { .database-icon; .medium-yellow; }
+
+  &.text-file-ndjson:before { .database-icon; .medium-orange; }
+  &.text-file-cson:before   { .database-icon; .medium-maroon; }
+  &.text-file-yml:before,
+  &.text-file-yaml:before   { .database-icon; .light-red; }
+
+  // Elixir icon
+  &.text-file-ex:before       { .elixir-icon;     .dark-purple; }
+
+  &.text-file-exs:before,
+  &.text-file-eex:before      { .elixir-icon;   .medium-purple; }
+
+  &.text-file-html-eex:before { .html5-icon;    .medium-purple; }
+  &.text-file-json-eex:before { .database-icon; .medium-purple; }
+  &.text-file-mix-exs:before   { .elixir-icon;    .light-purple; }
+  &.text-file-mix-ex:before    { .elixir-icon;    .light-purple; }
+
+  // Erlang icon
+  &.text-file-erl:before        { .erlang-icon;   .medium-red; }
+  &.text-file-beam:before       { .erlang-icon;     .dark-red; }
+
+  // Fonts
+  &.text-file-eot:before   { .font-icon; .light-green;  }
+  &.text-file-ttf:before   { .font-icon; .medium-green;  }
+  &.text-file-otf:before   { .font-icon; .dark-yellow;  }
+  &.text-file-woff:before  { .font-icon; .medium-blue;  }
+  &.text-file-woff2:before { .font-icon; .dark-blue;  }
+
+  // FSharp icon
+  &.text-file-fs:before,
+  &.text-file-fsx:before,
+  &.text-file-fsi:before    { .fsharp-icon; .medium-blue; }
+
+  // Git icon
+  &.text-file-gitconfig:before,
+  &.text-file-gitignore:before,
+  &.text-file-gitignore_global:before,
+  &.text-file-gitkeep:before,
+  &.text-file-gitattributes:before,
+  &.text-file-gitmodules:before { .git-icon; }
+
+  // HTML5 icon
+  &.text-file-html:before,
+  &.text-file-htm:before   { .html5-icon; .medium-orange; }
+
+  &.text-file-shtml:before { .html5-icon; .medium-cyan;  }
+  &.text-file-haml:before  { .haml-icon; .medium-yellow;  }
+  &.text-file-jsp:before   { .html5-icon; .medium-purple; }
+  &.text-file-ctp:before   { .html5-icon; .medium-blue;   }
+
+  &.text-file-ejs:before,
+  &.text-file-swig:before  { .html5-icon; .medium-green;  }
+
+  &.text-file-cshtml:before { .html5-icon; .medium-red; }
+
+  // Mustache icon
+  &.text-file-hbs:before,
+  &.text-file-handlebars:before,
+  &.text-file-mustache:before { .hbs-mustache-icon; .medium-orange; }
+
+  // Emblem
+  &.text-file-emblem:before,
+  &.text-file-em:before { .hbs-mustache-icon; .medium-blue; }
+
+  // Smarty icon
+  &.text-file-tpl:before { .smarty-icon; .medium-yellow; }
+
+  // Twig icon
+  &.text-file-twig:before { .twig-icon; .medium-green; }
+
+  // Gear icon
+  &.text-file-hgignore:before,
+  &.text-file-mailmap:before,
+  &.text-file-jshintignore:before,
+  &.text-file-babelignore:before    { .gear-icon;                 }
+
+  &.text-file-editorconfig:before,
+  &.text-file-htpasswd:before       { .gear-icon; .medium-orange; }
+
+  &.text-file-lesshintrc:before     { .gear-icon; .dark-yellow;   }
+
+  &.text-file-csscomb-json:before   { .gear-icon; .medium-yellow; }
+
+  &.text-file-csslintrc:before,
+  &.text-file-jshintrc:before,
+  &.text-file-babelrc:before,
+  &.text-file-jscsrc:before        { .gear-icon; .medium-yellow; }
+
+  &.text-file-module:before        { .gear-icon; .medium-blue;   }
+  &.text-file-htaccess:before      { .gear-icon; .medium-red;    }
+
+  // Nodemon icon
+  &.text-file-nodemon-json:before    { .gear-icon; .medium-green;  }
+
+  &.text-file-nodemonignore:before  { .gear-icon; .medium-green;  }
+
+
+  // NPM icon
+  &.text-file-npmrc:before,
+  &.text-file-npmignore:before       { .node-icon; }
+
+  &.text-file-npm-debug-log:before,
+  &.text-file-package-json:before    { .node-icon; .medium-red; }
+
+  // Bower icon
+  &.text-file-bowerrc:before     { .bower-icon; }
+  &.text-file-bower-json:before   { .bower-icon; .medium-yellow; }
+
+  // Sass icon
+  &.text-file-sass:before,
+  &.text-file-scss:before { .sass-icon; .light-pink; }
+
+  // PHP icon
+  &.text-file-php:before,
+  &.text-file-hh:before  { .php-icon; .dark-blue; }
+
+  &.text-file-blade-php:before  { .laravel-icon; .dark-purple; }
+
+
+  // Python icon
+  &.text-file-py:before { .python-icon; .dark-yellow; }
+
+  // IPython icon
+  &.text-file-ipy:before { .python-icon; .dark-blue; }
+
+  // Ren'Py (Python)
+  &.text-file-rpy:before { .python-icon; .medium-pink; }
+  &.text-file-rpyb:before { .binary-icon; .medium-red; }
+  &.text-file-rpyc:before { .binary-icon; }
+
+  // Ruby icon
+  &.text-file-capfile:before,
+  &.text-file-gemfile:before,
+  &.text-file-gemfile.lock:before,
+  &.text-file-guardfile:before,
+  &.text-file-rakefile:before,
+  &.text-file-gemspec:before,
+  &.text-file-ruby-gemset:before,
+  &.text-file-ruby-version:before,
+  &.text-file-rspec:before { .ruby-icon; }
+
+  &.text-file-rb:before,
+  &.text-file-ru:before,
+  &.text-file-rake:before,
+  &.text-file-erb:before,
+  &.text-file-opal:before   { .ruby-icon; .medium-red; }
+
+  &.text-file-_spec-rb:before   { .ruby-icon; .light-green; }
+
+  &.text-file-rails:before { .rails-icon; .medium-red; }
+
+  &.text-file-pp:before { .puppet-icon; .medium-purple }
+
+  // Cucumber (Gherkin) icon
+  &.text-file-feature:before { .comment-icon; .medium-green; }
+
+
+  // JavaScript icon
+  &.text-file-js:before,
+  &.text-file-es6:before,
+  &.text-file-es:before  { .js-icon; .medium-yellow; }
+
+  // JSX icon
+  &.text-file-jsx:before { .jsx-icon; .medium-blue; }
+  &.text-file-tsx:before { .jsx-icon; .light-blue; }
+  &.text-file-react-js:before { .react-icon; .medium-blue; }
+
+  // TypeScript
+  &.text-file-ts:before  { .ts-icon; .medium-blue; }
+
+  // LiveScript
+  &.text-file-ls:before { .ls-icon; .medium-blue; }
+
+  // RAML
+  &.text-file-raml:before { .raml-icon; .medium-cyan; }
+
+  // Elm icon
+  &.text-file-elm:before { .elm-icon; .medium-blue; }
+
+  // Org-mode
+  &.text-file-org:before { .org-icon; .dark-green; }
+
+  // Boot icon
+  &.text-file-build-boot:before { .boot-icon; }
+
+  // Lein icon
+  &.text-file-project.clj:before { .lein-icon; }
+
+  // Coffee icon
+  &.text-file-coffee:before    { .coffee-icon; .medium-maroon; }
+  &.text-file-cjsx:before      { .coffee-icon; .dark-maroon; }
+  &.text-file-litcoffee:before { .coffee-icon; .light-maroon;  }
+  &.text-file-iced:before { .coffee-icon; .medium-blue;  }
+
+
+  // ERB combinations
+  &.text-file-js-erb:before     { .js-icon;     .medium-red; }
+  &.text-file-coffee-erb:before { .coffee-icon; .medium-red; }
+  &.text-file-html-erb:before   { .html5-icon;  .medium-red; }
+
+  // Perl icon
+  &.text-file-pl:before { .perl-icon; .medium-blue; }
+  &.text-file-pm:before { .perl-icon; .medium-blue; }
+  &.text-file-t:before { .perl-icon; .medium-blue; }
+
+  // Java icon
+  &.text-file-java:before { .java-icon; .medium-purple; }
+
+  // Go
+  &.text-file-go:before {.go-icon; .medium-purple;}
+  &.text-file-gohtml:before { .html5-icon; .dark-blue; }
+
+  // Scala
+  &.text-file-scala:before { .scala-icon; .medium-red; }
+
+  // Haskell
+  &.text-file-hs:before { .haskell-icon; .medium-purple; }
+
+  // Rust
+  &.text-file-rs:before   { .rust-icon; .medium-maroon; }
+  &.text-file-rlib:before { .rust-icon; .light-maroon; }
+
+  // Objective-C, C++, C
+  &.text-file-c:before       { .c-icon; .medium-blue; }
+  &.text-file-h:before       { .c-icon; .medium-purple; }
+
+  &.text-file-cpp:before,
+  &.text-file-cxx:before,
+  &.text-file-cc:before      { .cpp-icon; .medium-blue; }
+
+  &.text-file-hpp:before,
+  &.text-file-hxx:before     { .cpp-icon; .medium-purple; }
+
+  &.text-file-ipp:before     { .cpp-icon; .medium-orange; }
+
+  &.text-file-m:before,
+  &.text-file-mm:before      { .objc-icon; .medium-blue; }
+
+  &.text-file-swift:before   { .swift-icon; .medium-green; }
+
+  // OCaml
+  &.text-file-ml:before      { .ocaml-icon; .medium-orange; }
+  &.text-file-mli:before     { .ocaml-icon; .dark-orange;   }
+  &.text-file-eliom:before   { .ocaml-icon; .medium-red;    }
+  &.text-file-eliomi:before  { .ocaml-icon; .dark-red;      }
+  &.text-file-ml4:before     { .ocaml-icon; .medium-green;  }
+  &.text-file-mll:before     { .ocaml-icon; .dark-green;    }
+  &.text-file-mly:before     { .ocaml-icon; .dark-yellow;   }
+
+
+  // D lang
+  &.text-file-d:before     { .dlang-icon; .medium-red; }
+  &.text-file-di:before    { .dlang-icon; .medium-red; }
+
+  &.text-file-cs:before   { .csharp-icon; .medium-blue; }
+  &.text-file-vb:before   { .code-icon; .medium-blue;   }
+
+  // Dart
+  &.text-file-dart:before   { .dart-icon; .medium-cyan; }
+
+  // Sourcepwn
+  &.text-file-sp:before,  { .clojure-icon; .medium-yellow; }
+  &.text-file-inc:before  { .clojure-icon; .medium-green;  }
+
+  // Secret icon
+  &.text-file-secret:before { .secret-icon; }
+
+  // Markdown (except readme.md)
+  &.text-file-mdown:before,
+  &.text-file-markdown:before,
+  &.text-file-mkd:before,
+  &.text-file-mkdown:before,
+  &.text-file-rmd:before,
+  &.text-file-ron:before,
+  &.text-file-md:before  { .markdown-icon; .medium-blue;   }
+
+  // Template Toolkit
+  &.text-file-tt:before,
+  &.text-file-tt2:before { .templatetoolkit-icon; .medium-blue; }
+
+  &.text-file-tt3:before { .templatetoolkit-icon; .medium-purple; }
+
+  // SQL
+  &.text-file-sql:before { .sql-icon; }
+
+  // Text
+  &.text-file-txt:before { .medium-cyan; }
+
+  // Assembly and binary
+  &.text-file-o:before,
+  &.text-file-out:before,
+  &.text-file-s:before,
+  &.text-file-asm:before { .binary-icon; .medium-red; }
+
+  // Linux kernel modules
+  &.text-file-ko:before  { .binary-icon; .dark-green; }
+
+  // Shell
+  &.text-file-sh:before,
+  &.text-file-bash:before,
+  &.text-file-bashrc:before,
+  &.text-file-bash_login:before,
+  &.text-file-bash_profile:before{ .terminal-icon; .medium-purple; }
+  &.text-file-zsh:before,
+  &.text-file-zshrc:before { .terminal-icon; .medium-blue; }
+  &.text-file-fish:before,
+  &.text-file-fishrc:before  { .terminal-icon; .medium-green; }
+
+  // Vim
+  &.text-file-vim:before,
+  &.text-file-nvimrc:before,
+  &.text-file-vimrc:before,
+  &.text-file-_vimrc:before,
+  &.text-file-gvimrc:before,
+  &.text-file-nvimrc:before,
+  &.text-file-vimrc:before { .vim-icon; .medium-green; }
+
+  // Composer icon
+  &.text-file-composer-json:before { .composer-icon; .medium-yellow; }
+
+  // Grunt icon
+  &.text-file-gruntfile-js:before { .grunt-icon; .medium-yellow; }
+  &.text-file-gruntfile-coffee:before { .grunt-icon; .medium-maroon; }
+
+  // Gulp icon
+  &.text-file-gulpfile-js:before  { .gulp-icon; .medium-red; }
+  &.text-file-gulpfile-coffee:before { .gulp-icon; .medium-maroon; }
+  &.text-file-gulpfile-babel-js:before  { .gulp-icon; .medium-red; }
+
+  // Riot.js
+  &.text-file-tag:before { .riot-icon; .medium-red; }
+
+  // Cargo
+  &.text-file-cargo-toml:before { .package-icon; .light-orange; }
+  &.text-file-cargo-lock:before { .package-icon; .dark-orange; }
+
+  // Ionic icon
+  &.text-file-ionic.project:before { .ionic-icon; .medium-blue; }
+
+  // NGINX icon
+  &.text-file-conf:before { .nginx-icon; .dark-green; }
+
+  // Apache
+  &.text-file-apache-conf:before,
+  &.text-file-apache2-conf:before,
+  &.text-file-httpd-conf:before { .apache-icon; .medium-red; }
+
+  // OS packages
+  &.text-file-deb:before { .debian-icon; .medium-red; }
+  &.text-file-rpm:before { .red-hat-icon; .medium-red; }
+  &.text-file-dmg:before { .osx-icon; .medium-red; }
+
+  // Travis icon
+  &.text-file-travis:before { .travis-icon; .medium-red; }
+
+  // Dockerfile icon
+  &.text-file-dockerfile:before { .docker-icon; .dark-blue; }
+  &.text-file-dockerignore:before { .docker-icon; .dark-blue; }
+
+  // Terraform
+  &.text-file-tf:before { .terraform-icon; .dark-purple; }
+
+  // SaltStack
+  &.text-file-sls:before { .saltstack-icon; .medium-blue; }
+
+  // XAML icon
+  &.text-file-xaml:before { .code-icon; .medium-blue; }
+
+  // Lua icon
+  &.text-file-lua:before { .lua-icon; .medium-blue; }
+
+  // PowerShell icon
+  &.text-file-ps1:before ,
+  &.text-file-psd1:before ,
+  &.text-file-psm1:before ,
+  &.text-file-ps1xml:before { .terminal-icon; .medium-blue; }
+
+  // Readme
+  &.text-file-readme-md:before { .book-icon; .medium-blue; }
+
+  // AsciiDoc
+  &.text-file-adoc:before,
+  &.text-file-asc:before,
+  &.text-file-asciidoc:before { .asciidoc-icon; .medium-blue; }
+
+  // Images
+  &.text-file-png:before { .image-icon; .medium-orange; }
+  &.text-file-gif:before { .image-icon; .medium-yellow; }
+  &.text-file-jpg:before { .image-icon; .medium-green;  }
+  &.text-file-ico:before { .image-icon; .medium-blue;  }
+  &.text-file-svg:before { .svg-icon; .dark-yellow;  }
+
+
+  // Videos
+  &.text-file-avi:before,
+  &.text-file-3gp:before  { .video-icon; .medium-blue;   }
+
+  &.text-file-mp4:before,
+  &.text-file-webm:before { .video-icon; .dark-blue;     }
+
+  &.text-file-mov:before  { .video-icon; .medium-cyan;   }
+  &.text-file-mkv:before  { .video-icon; .medium-purple; }
+  &.text-file-h264:before { .video-icon; .dark-green;    }
+  &.text-file-wmv:before  { .video-icon; .dark-purple;   }
+  &.text-file-ogv:before  { .video-icon; .dark-orange;   }
+  &.text-file-ogg:before  { .video-icon; .medium-orange; }
+  &.text-file-m4v:before  { .video-icon; .dark-yellow;   }
+
+  &.text-file-mpg:before,
+  &.text-file-ogm:before  { .video-icon; .dark-red;      }
+
+  &.text-file-mpeg:before { .video-icon; .medium-red;    }
+  &.text-file-3gpp:before { .video-icon; .light-blue;    }
+
+
+  // Windows specific Files
+  &.text-file-bat:before,
+  &.text-file-cmd:before { .windows-icon; .medium-purple;}
+
+  &.text-file-exe:before,
+  &.text-file-com:before { .windows-icon; }
+
+  &.text-file-reg:before { .windows-icon; .medium-blue;}
+
+  // TeX
+  &.text-file-tex:before { .tex-icon; .medium-blue; }
+  &.text-file-sty:before { .tex-icon; .medium-red; }
+  &.text-file-cls:before { .tex-icon; .medium-orange; }
+  &.text-file-bib:before { .bibtex-icon; .medium-yellow; }
+
+  // Seperated Value files
+  &.text-file-csv:before { .graph-icon; .light-red; }
+  &.text-file-tsv:before { .graph-icon; .light-green; }
+
+  // Gnuplot
+  &.text-file-gp:before,
+  &.text-file-gnuplot:before { .graph-icon; .medium-red; }
+
+  // MAXScript
+  &.text-file-ms:before,
+  &.text-file-mce:before,
+  &.text-file-mcr:before { .maxscript-icon; .dark-blue; }
+
+  // Kivy
+  &.text-file-kv:before { .kivy-icon; .dark-maroon; }
+
+  // Crystal
+  &.text-file-cr:before,
+  &.text-file-ecr:before { .crystal-icon; .medium-cyan; }
+
+  // Gradle
+  &.text-file-gradle:before { .gradle-icon; .medium-blue; }
+
+  // Groovy
+  &.text-file-groovy:before,
+  &.text-file-grt:before,
+  &.text-file-gtpl:before,
+  &.text-file-gsp:before,
+  &.text-file-gvy:before { .groovy-icon; .light-blue; }
+
+  // R
+  &.text-file-rd:before,
+  &.text-file-rsx:before,
+  &.text-file-rprofile:before,
+  &.text-file-r:before { .r-icon; .medium-blue; }
+
+  // Vue
+  &.text-file-vue:before { .vue-icon; .light-green; }
+
+  // Haxe
+  &.text-file-hx:before,
+  &.text-file-hxsl:before { .haxe-icon; .medium-orange; }
+  &.text-file-hxml:before { .checklist-icon; .medium-orange; }
+
+  // OpenSCAD
+  &.text-file-scad:before { .scad-icon; .medium-orange; }
+
+  // PostCSS
+  &.text-file-postcss:before { .postcss-icon; .dark-red; }
+
+
+  // Ada
+  &.text-file-ada:before,
+  &.text-file-adb:before,
+  &.text-file-ads:before { .ada-icon; .medium-blue; }
+
+  // APL / Dyalog APL
+  &.text-file-apl:before    { .apl-icon; .dark-red; }
+  &.text-file-dyalog:before { .dyalog-icon; .medium-orange; }
+
+  // FORTRAN
+  &.text-file-f:before      { .fortran-icon; .medium-maroon; }
+  &.text-file-f90:before    { .fortran-icon; .medium-green;  }
+  &.text-file-f03:before    { .fortran-icon; .medium-red;    }
+  &.text-file-f08:before    { .fortran-icon; .medium-blue;   }
+  &.text-file-f77:before    { .fortran-icon; .medium-maroon; }
+  &.text-file-f95:before    { .fortran-icon; .dark-pink;     }
+  &.text-file-for:before    { .fortran-icon; .dark-cyan;     }
+  &.text-file-fpp:before    { .fortran-icon; .dark-yellow;   }
+
+  // LISP
+  &.text-file-lsp:before    { .lisp-icon; .medium-red;       }
+  &.text-file-lisp:before   { .lisp-icon; .dark-red;         }
+  &.text-file-cl:before     { .lisp-icon; .medium-orange;    }
+  &.text-file-l:before      { .lisp-icon; .medium-maroon;    }
+  &.text-file-ny:before     { .lisp-icon; .medium-blue;      }
+
+  // Jade
+  &.text-file-jade:before  { .jade-icon; .medium-red;  }
+
+  // ESLint icon
+  &.text-file-eslintrc:before,
+  &.text-file-eslintrc-js:before,
+  &.text-file-eslintrc-json:before,
+  &.text-file-eslintrc-yaml:before,
+  &.text-file-eslintrc-yml:before     { .eslint-icon;  .light-purple }
+  &.text-file-eslintignore:before     { .eslint-icon; .medium-purple }
+}
